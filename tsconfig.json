@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "moduleResolution": "node",
+    "jsx": "react",
+    "sourceMap": true,
+    "declaration": false,
+    "esModuleInterop": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es5",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "experimentalDecorators": true,
+    "baseUrl": "src",
+    "paths": {
+      "@utils": ["utils"],
+      "@coordinates": ["common/coordinates/index"],
+      "@ui": ["ui/index"],
+      "@types": ["types/index"],
+      "@classes": ["classes/index"],
+      "@stores": ["stores/index"],
+      "@common": ["common/index"],
+      "@editor-forms": ["pages/constructor/forms/index"],
+      "@env": ["env.ts"],
+      "@proto": ["proto/index"],
+      "@clients": ["clients"]
+    },
+  },
+  "include": [
+    "src",
+    "node_modules/proto-schemes"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist"
+  ]
+}

@@ -1,0 +1,115 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url("/public/fonts/Segoe UI.ttf");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("/public/fonts/Helvetica.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "Segoe UI", Open Sans, sans-serif;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #a9adb1;
+  border-radius: 8px;
+}
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.h1 {
+  margin-bottom: 30px;
+}
+.sun-editor {
+  border: unset !important;
+}
+.sun-editor p {
+  margin-bottom: 0 !important;
+}
+.sun-editor *::marker {
+  font-size: 18px;
+}
+.sun-editor .se-wrapper-inner * {
+  font-size: 20px;
+}
+.se-wrapper-inner {
+  height: unset !important;
+  min-height: unset !important;
+}
+
+[data-editor="box"] .se-toolbar-inline {
+  width: 600px !important;
+}
+[data-editor="box"] blockquote {
+   margin-block-start: unset !important;
+   margin-block-end: unset !important;
+   margin-inline-start: unset !important;
+   margin-inline-end: unset !important;
+}
+
+[data-editor="content"] .sun-editor {
+  height: 100% !important;
+}
+
+[data-editor="content"] .se-toolbar {
+  position: sticky !important;
+  top: 0;
+  left: 0;
+  outline: unset !important;
+}
+[data-editor="content"] .se-container {
+  position: static !important;
+}
+[data-editor="content"] .se-resizing-bar {
+  display: none !important;
+}
+
+.swiper-container{
+  background-color: aliceblue;
+  height: 300px;
+}
+
+.swiper-wrapper{
+  align-items: center;
+  display: flex;
+}
+
+.swiper-slide {
+  width: 80%;
+  height: auto;
+}
+
+.swiper-slide-active {}

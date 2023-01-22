@@ -1,0 +1,43 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;   
+}
+.container h1 {
+  color: #8d23f9;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.GeneratedTable {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #ffcc00;
+    border-style: solid;
+    color: #000000;
+  }
+  
+  .GeneratedTable td, table.GeneratedTable th {
+    border-width: 2px;
+    border-color: #ffcc00;
+    border-style: solid;
+    padding: 3px;
+  }
+  
+  .GeneratedTable thead {
+    background-color: #ffcc00;
+  }
+
+  .contacts {
+    width: auto;
+    font-size: 25px;
+    margin-top: 50px;
+  }

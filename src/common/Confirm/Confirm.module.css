@@ -1,0 +1,13 @@
+.container {
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.message {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #464646;
+}

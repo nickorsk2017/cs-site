@@ -1,0 +1,40 @@
+.textInput {
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+}
+.label {
+    color: #273445;
+    font-weight: 600;
+    font-size: 11px;
+}
+.input {
+    width: 100%;
+    max-width: 400px;
+    height: 35px;
+    border: 1px solid #e4e9f2;
+    color: #244D51;
+    background-color: #f7f9fc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.input:hover {
+    border: 1px solid #ff5100;
+}
+.input:focus {
+    border-color: transparent;
+    outline: none;
+    box-shadow: 0px 0px 6px 0px #8a8a8a;
+}
+.error {
+    font-size: 12px;
+    color: #d62b0d;
+    font-weight: bolder;
+    padding-top: 5px;
+}

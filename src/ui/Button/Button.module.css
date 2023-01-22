@@ -1,0 +1,44 @@
+.containerGray,
+.container {
+    display: inline-flex;
+    width: auto;
+    height: 30px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    background: #419cf0;
+    color: #fff;
+    padding: 0 24px;
+    border-radius: 8px;
+    border: 1px  transparent;
+    cursor: pointer;
+    font-size: 11px;
+    margin-right: 20px;
+    transition: all 0.2s ease-out 0s;
+}
+.containerGray:focus,
+.container:focus {
+    outline: none;
+}
+.container:hover {
+    background: linear-gradient(323deg, #912adc,#00f7ff, #912adc);
+    background-size: 600% 600%;
+
+    -webkit-animation: animation 7s ease infinite;
+    -moz-animation: animation 7s ease infinite;
+    animation: animation 7s ease infinite;
+}
+.containerGray:hover {
+    background-color: #636262;
+}
+
+@keyframes animation {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
+
+.containerGray {
+    background-color: #949494;
+    color: #fff;
+}

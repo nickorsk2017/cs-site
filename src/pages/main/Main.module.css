@@ -1,0 +1,105 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: auto;
+}
+.introBlock {
+    background: #f6f8f9;
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px;
+    border-top: 2px solid #8d23f9;
+    border-bottom: 2px solid #8d23f9;
+}
+.introBlock h1 {
+    color: #8d23f9;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.opportunities {
+    padding: 50px 0;
+}
+
+.wiki,
+.users,
+.intercative {
+    background: #e2f5ff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.wikiLeft,
+.usersLeft,
+.intercativeLeft {
+    padding: 50px 0;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+.wikiRight,
+.usersRight,
+.intercativeRight {
+    height: 100%;
+    padding-right: 50px;
+    min-width: 700px;
+    max-width: 700px;
+}
+
+.wikiRight video ,
+.usersRight video,
+.intercativeRight video {
+  width: 100%;
+  height: 100%;
+}
+.wikiRightWrapper video ,
+.usersRightWrapper video,
+.intercativeRightWrapper video {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.chat,
+.boards {
+    background: #fff;
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.chatLeft,
+.boardsLeft {
+    padding-left: 50px;
+}
+.chatRight,
+.boardsRight {
+    width: 700px;
+    height: 200px;
+}
+
+.moreCommingSoon {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}

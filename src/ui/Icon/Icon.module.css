@@ -1,0 +1,43 @@
+.containerLight,
+.container {
+    display: inline-flex;
+    width: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ff5100;
+    color: #fff;
+    padding: 4px 24px;
+    border-radius: 10px;
+    border: 1px solid #ff5100;
+    cursor: pointer;
+    font-size: 11px;
+    margin-right: 20px;
+}
+.containerRed,
+.containerLight:focus,
+.container:focus {
+    outline: none;
+    box-shadow: 0 1px 10px -13px rgb(0 0 0 / 70%), 0 -1px 5px 0px rgb(0 0 0 / 39%), 0 8px 10px -5px rgb(0 0 0 / 37%);
+}
+.container:hover {
+    box-shadow: 0 1px 10px -13px rgb(0 0 0 / 70%), 0 -1px 5px 0px rgb(0 0 0 / 39%), 0 8px 10px -5px rgb(0 0 0 / 37%);
+}
+
+.containerLight {
+    background-color: transparent;
+    color: #ff5100;
+    border: 1px solid transparent;
+    padding: 0;
+}
+
+.containerRed {
+    background-color: transparent;
+    color: #ce4f28;
+    border: 1px solid transparent;
+    padding: 0;
+}
+.containerRed:focus,
+.containerLight:focus {
+    border: 1px solid transparent;
+}

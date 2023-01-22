@@ -1,0 +1,44 @@
+.container {
+    width: 560px;
+    height: 250px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    border-radius: 30px;
+    padding: 30px;
+    border: 1px solid  #333;
+    cursor: grab;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+.avatar {
+    width: 164px;
+    height: 200px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.avatar img{
+    width: 100%;
+    height: 120%;
+    position: relative;
+    top: -10%;
+    object-fit: fill;
+}
+.name {
+    font-size: 25px;
+    font-weight: 300px;
+}

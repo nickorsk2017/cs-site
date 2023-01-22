@@ -1,0 +1,13 @@
+.logo {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    color: #000;
+}
+.logoImg {
+    width: 22px;
+    position: relative;
+    top: 4px;
+}
