@@ -30,13 +30,20 @@ export const Team = ({}: Params) => {
           onSwiper={(swiper) => console.log(swiper)}
       >
           <SwiperSlide className={styles.slide}> 
-            <TeamUser firstName='Nikolai' lastName='Stepanov' avatar='/public/team/Nick.jpg'/>
+            <TeamUser  firstName='Nikolai' lastName='Stepanov' avatar='/public/team/Nick.jpg'>
+              <div>CTO</div>
+              <div>Founder</div>
+              <div>13 years in IT development</div>
+            </TeamUser>
           </SwiperSlide>
           <SwiperSlide className={styles.slide}>
-            <TeamUser style={{borderColor: "#236df9"}} firstName='Nikolai 2' lastName='Stepanov' avatar='/public/team/Nick.jpg'/>
-          </SwiperSlide>
-          <SwiperSlide className={styles.slide}>
-            <TeamUser style={{borderColor: "#f9238b"}} firstName='Nikolai 3' lastName='Stepanov' avatar='/public/team/Nick.jpg'/>
+            <TeamUser style={{borderColor: "#236df9"}} firstName='Andrei' lastName='Matyushchenko' avatar='/public/team/Andrei.jpg'>
+              <div>CTO</div>
+              <div>Founder</div>
+              <div>Web developer since 2017.<br/>
+                  Love well-designed apps and scalable architecture.
+              </div>
+            </TeamUser>
           </SwiperSlide>
       </Swiper>
     </div>

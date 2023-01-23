@@ -8,7 +8,7 @@ type Params = {
   style?: React.CSSProperties;
 }
 
-export const TeamUser = ({firstName, lastName, avatar, style}: Params) => {
+export const TeamUser = ({firstName, lastName, avatar, style, children}: React.PropsWithChildren<Params>) => {
   
   return <div style={style} className={styles.container}>
     <div className={styles.left}>
@@ -20,9 +20,7 @@ export const TeamUser = ({firstName, lastName, avatar, style}: Params) => {
       <div className={styles.name}>
         {`${firstName} ${lastName}`}
       </div>
-      <div>CTO</div>
-      <div>Founder</div>
-      <div>13 years in IT development</div>
+      {children}
     </div>
   </div>
 };
