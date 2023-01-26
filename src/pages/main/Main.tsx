@@ -32,7 +32,7 @@ export const Main = ({}: Params) => {
       <p>Add users by link through any convenient messenger</p>
     </Block>
 
-    <Block style={{background: "#fff", marginTop: "50px"}} videoURL="/public/videos/">
+    <Block style={{background: "#fff", marginTop: "50px"}} videoURL="/public/videos/wiki.mp4">
       <h2>Wiki for work</h2>
       <p>Store knowledge for your students and teachers.</p>
     </Block>
