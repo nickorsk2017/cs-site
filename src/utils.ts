@@ -140,12 +140,11 @@ export const isEqual = (
 
   export const deviceType = () => {
     const detect = new MobileDetect(window.navigator.userAgent);
-    alert("navigator.userAgent: "+ navigator.userAgent);
-    if (detect.tablet() || (/iPad/.test(navigator.userAgent))) {
-      return "tablet";
-    }
     if (detect.phone()) {
         return "mobile";
+    }
+    if (document.body.offsetWidth <= 1200) {
+      return "tablet";
     }
     return "desktop";
   };
