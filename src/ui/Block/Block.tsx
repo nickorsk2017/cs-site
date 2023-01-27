@@ -15,7 +15,7 @@ export const Block = ({videoURL, style, children}: PropsWithChildren<Params>) =>
   const isVisible = !!entry?.isIntersecting;
 
   useEffect(() => {
-    if(deviceType() === "mobile" && refVideo.current){
+    if(deviceType() === "tablet" && refVideo.current){
       refVideo.current.style.width = ref.current.offsetWidth + "px";
     }
   }, []);
