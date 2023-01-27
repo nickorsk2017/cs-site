@@ -16,10 +16,10 @@ export const Solutions = ({}: Params) => {
 
     <Block style={{background: "#ba5af8", color: "#fff"}} videoURL="/public/videos/solutions.mp4">
       <h2>Choose your way</h2>
-      <p><i></i>Create your own virtual school</p>
-      <p><i></i>Train and manage your team</p>
-      <p><i></i>Solutions for private Mentors</p>
-      <p><i></i>Webinars</p>
+      <p><span className={["material-symbols-outlined", styles.icon].join(" ")}>done</span>Create your own virtual school</p>
+      <p><span className={["material-symbols-outlined", styles.icon].join(" ")}>done</span>Train and manage your team</p>
+      <p><span className={["material-symbols-outlined", styles.icon].join(" ")}>done</span>Solutions for private Mentors</p>
+      <p><span className={["material-symbols-outlined", styles.icon].join(" ")}>done</span>Webinars</p>
     </Block>
 
     <Footer/>

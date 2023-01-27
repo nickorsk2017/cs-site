@@ -44,15 +44,6 @@
     justify-content: flex-start;
 }
 
-.block i {
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    background-color: #fff;
-    margin-right: 20px;
-    display: inline-flex;
-}
-
 @media screen and (max-width: 1025px) {
     .block {
         flex-direction: column;
