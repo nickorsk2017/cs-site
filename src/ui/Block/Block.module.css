@@ -28,7 +28,6 @@
 }
 .blockRightWrapper {
     width: 100%;
-    height: calc(100% - 50px);
     border-radius: 30px;
     overflow: hidden;
     background-color: #f9f9f9;
