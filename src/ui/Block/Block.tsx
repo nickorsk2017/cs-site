@@ -30,7 +30,7 @@ export const Block = ({videoURL, style, children}: PropsWithChildren<Params>) =>
       </div>
       <div className={styles.blockRight}>
         <div className={styles.blockRightWrapper}>
-          <video loop muted ref={refVideo} src={videoURL}/>
+          <video width="100%" loop muted ref={refVideo} src={videoURL}/>
         </div>
       </div>
     </div>
