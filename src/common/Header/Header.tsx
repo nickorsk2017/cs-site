@@ -13,8 +13,6 @@ export const Header = ({}: Params) => {
     useEffect(() => {
         forceUpdate();
     }, []);
-
-    alert("device: " + deviceType());
     return <div className={[styles.container, deviceType() !== "desktop" ? styles.mobile: null].join(" ")}>
         <div className={[styles.menu, open ? styles.open : undefined].join(" ")}>
             <span onClick={() => setOpen(!open)} className={["material-symbols-outlined", styles.icon].join(" ")}>

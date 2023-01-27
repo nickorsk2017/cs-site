@@ -70,7 +70,7 @@
     left: 0;
     top: 0;
     height: 100vh;
-    background: rgba(66, 30, 151, 0.9);
+    background: rgba(66, 30, 151, 1);
     backdrop-filter: saturate(180%) blur(5px);
     border-right: 1px solid #333;
     display: flex;
