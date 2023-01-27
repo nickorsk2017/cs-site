@@ -108,6 +108,10 @@
     margin-bottom: 10px;
 }
 
+.mobile .active {
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 400px) {
     .container {
       padding-right: 50px;
