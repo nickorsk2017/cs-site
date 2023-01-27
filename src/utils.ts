@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react';
+import MobileDetect from "mobile-detect";
 
 export const uniqueId = () => {
     let d = new Date().getTime();
@@ -138,11 +139,11 @@ export const isEqual = (
   };
 
   export const deviceType = () => {
-    const ua = navigator.userAgent;
-    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
-        return "tablet";
+    const detect = new MobileDetect(window.navigator.userAgent);
+    if (detect.tablet()) {
+      return "tablet";
     }
-    else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+    if (detect.phone()) {
         return "mobile";
     }
     return "desktop";
