@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Logo} from "@ui";
-import { NavLink } from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import {deviceType} from "@utils";
 import styles from './Header.module.css';
 
 export type Params = {};
 
 export const Header = ({}: Params) => {
-    return <div className={[styles.container].join(" ")}>
-        <div>
+    const [open, setOpen] = useState(false);
+
+    return <div className={[styles.container, deviceType() !== "desktop" ? styles.mobile: null].join(" ")}>
+        <div className={[styles.menu, open ? styles.open : undefined].join(" ")}>
+            <span onClick={() => setOpen(!open)} className={["material-symbols-outlined", styles.icon].join(" ")}>
+                menu
+            </span>
             <NavLink
                 to="/"
                 exact
@@ -45,7 +51,7 @@ export const Header = ({}: Params) => {
                 Pricing
             </NavLink>*/}
         </div>
-        <div>
+        <div className={styles.right}>
             <a href="http://auth.chargeskills.com" className={styles.start}>
                 <span className="material-symbols-outlined">
                     arrow_circle_right

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Footer, Header} from "../../common";
-import {Block} from "./_components/Block/Block";
+import {Block} from "@ui";
 import styles from './Main.module.css';
 
 type Params = {}

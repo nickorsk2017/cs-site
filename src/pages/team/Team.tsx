@@ -24,6 +24,14 @@ export const Team = ({}: Params) => {
           autoplay = {
             {delay: 1000}
           }
+          breakpoints={{
+            400: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: "auto",
+            },
+          }}
           modules={[Autoplay]}
           spaceBetween={30}
           onSlideChange={() => console.log('slide change')}

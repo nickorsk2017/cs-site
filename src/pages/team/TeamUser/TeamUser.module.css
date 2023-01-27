@@ -11,6 +11,16 @@
     border: 1px solid  #333;
     cursor: grab;
 }
+@media screen and (max-width: 400px) {
+    .container {
+        width: 300px;
+        flex-direction: column;
+        height: 500px;
+        align-items: center;
+        position: relative;
+        left: 25px;
+    }
+}
 .left {
     display: flex;
     flex-direction: column;

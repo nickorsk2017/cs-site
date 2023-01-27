@@ -11,3 +11,12 @@
     position: relative;
     top: 4px;
 }
+
+@media screen and (max-width: 400px) {
+    .logo {
+        right: 36px;
+    }
+    .text {
+      display: none;
+    }
+}

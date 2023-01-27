@@ -1,5 +1,6 @@
 import React, {useRef, PropsWithChildren, useEffect} from 'react';
-import {useIntersectionObserver} from "../../../../hooks";
+import {deviceType} from "@utils";
+import {useIntersectionObserver} from "../../hooks";
 import styles from './Block.module.css';
 
 type Params = {
@@ -12,6 +13,12 @@ export const Block = ({videoURL, style, children}: PropsWithChildren<Params>) =>
   const refVideo = useRef<HTMLVideoElement | null>(null);
   const entry = useIntersectionObserver(ref, {})
   const isVisible = !!entry?.isIntersecting;
+
+  useEffect(() => {
+    if(deviceType() === "mobile" && refVideo.current){
+      //refVideo.current.style.width = document.body.offsetWidth + "px";
+    }
+  }, []);
 
   useEffect(() => {
     isVisible && refVideo.current.play();

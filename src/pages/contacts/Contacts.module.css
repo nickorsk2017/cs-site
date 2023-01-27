@@ -41,3 +41,15 @@
     font-size: 25px;
     margin-top: 50px;
   }
+
+  @media screen and (max-width: 768px) {
+    .container h1 {
+      font-size: 20px;
+    }
+
+    .contacts {
+      font-size: 15px;
+      padding-left: 50px;
+      margin-top: 20px;
+    }
+  }

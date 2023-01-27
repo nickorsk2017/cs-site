@@ -4,6 +4,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import {deviceType} from "@utils";
 import {
   Main,
   Prices,
@@ -28,7 +29,11 @@ const App = () => {
   const innerWidth = window.innerWidth;
   const innerHeight = window.innerHeight;
   const diagonal = Math.sqrt(innerWidth * innerWidth + innerHeight * innerHeight);
-  const zoom = (diagonal / 1444).toString();
+  let zoom;
+  if(deviceType() === "desktop"){
+    zoom = (diagonal / 1444).toString();
+  }
+  console.log("device: " + deviceType());
   console.log("diagonal: " + diagonal);
 
   return (

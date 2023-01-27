@@ -8,3 +8,4 @@ export {Title} from "./Title/Title";
 export {IconFont} from "./IconFont/IconFont";
 export {Logo} from "./Logo/Logo";
 export {Photo, type PhotoValue} from "./Photo/Photo";
+export {Block} from "./Block/Block";

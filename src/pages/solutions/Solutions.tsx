@@ -1,5 +1,5 @@
 import React from 'react';
-import {Block} from "./_components/Block/Block";
+import {Block} from "@ui";
 import {Header, Footer} from "../../common";
 import styles from './Solutions.module.css';
 

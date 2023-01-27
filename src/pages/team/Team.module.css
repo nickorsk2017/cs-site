@@ -40,3 +40,24 @@
     display: inline-flex;
     flex-direction: column;
 }
+
+@media screen and (max-width: 400px) {
+    .introBlock {
+        padding-top: 0;
+    }
+    .introBlock h1 {
+        font-size: 20px;
+    }
+    .slider {
+        height: 600px;
+    }
+    .sliderWrapper {
+        height: 600px;
+        min-height: 600px;
+        width: 100%;
+    }
+    .slide {
+        width: 100%;
+        min-width: 100%;
+    }
+}
