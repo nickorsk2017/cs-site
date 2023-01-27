@@ -14,7 +14,7 @@ export const Solutions = ({}: Params) => {
       <h1>List of learning solutions</h1>
     </div>
 
-    <Block style={{background: "#ba5af8", color: "#fff"}} videoURL="/public/videos/solutions.mp4">
+    <Block style={{backgroundImage: "linear-gradient(0deg, #7749ff, #b605e6)", color: "#fff"}} videoURL="/public/videos/solutions.mp4">
       <h2>Choose your way</h2>
       <p><span className={["material-symbols-outlined", styles.icon].join(" ")}>done</span>Create your own virtual school</p>
       <p><span className={["material-symbols-outlined", styles.icon].join(" ")}>done</span>Train and manage your team</p>
