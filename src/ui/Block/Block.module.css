@@ -79,6 +79,7 @@
     }
     video {
         object-fit: contain !important;
+        border-radius: 8px;
     }
     .blockRightWrapper {
         height: auto !important;
