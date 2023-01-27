@@ -1,14 +1,20 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Logo} from "@ui";
 import {NavLink} from "react-router-dom";
-import {deviceType} from "@utils";
+import {deviceType, useForceUpdate} from "@utils";
 import styles from './Header.module.css';
 
 export type Params = {};
 
 export const Header = ({}: Params) => {
+    const {forceUpdate} = useForceUpdate();
     const [open, setOpen] = useState(false);
 
+    useEffect(() => {
+        forceUpdate();
+    }, []);
+
+    alert("device: " + deviceType());
     return <div className={[styles.container, deviceType() !== "desktop" ? styles.mobile: null].join(" ")}>
         <div className={[styles.menu, open ? styles.open : undefined].join(" ")}>
             <span onClick={() => setOpen(!open)} className={["material-symbols-outlined", styles.icon].join(" ")}>
