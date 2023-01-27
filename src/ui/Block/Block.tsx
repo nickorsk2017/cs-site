@@ -16,7 +16,7 @@ export const Block = ({videoURL, style, children}: PropsWithChildren<Params>) =>
 
   useEffect(() => {
     if(deviceType() === "mobile" && refVideo.current){
-      //refVideo.current.style.width = document.body.offsetWidth + "px";
+      refVideo.current.style.width = ref.current.offsetWidth + "px";
     }
   }, []);
 
