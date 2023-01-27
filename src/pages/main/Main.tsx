@@ -18,8 +18,8 @@ export const Main = ({}: Params) => {
 
     <Block  style={{backgroundImage: "linear-gradient(0deg, #7749ff, #b605e6)", color: "#fff"}} videoURL="/public/videos/desk.mp4">
       <h2>Interactive online lessons</h2>
-      <p>Use an online whiteboard with graphics, videos, images, stickers and more</p>
-      <p>Design a course structure with a flexible creation system.</p>
+      <p>Use online board with graphics, videos, images, stickers and more</p>
+      <p>Design a course structure with flexible creation system.</p>
     </Block>
 
     <Block style={{background: "#fff", marginTop: "50px"}} videoURL="/public/videos/tasks.mp4">
